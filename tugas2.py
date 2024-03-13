@@ -10,16 +10,14 @@ data_mahasiswa = {
     'Riskawati': {'password': 'pass8'},
     'Arfa': {'password': 'pass9'},
     'Rafika': {'password': 'pass10'},
- 
 }
 
 # Fungsi login
 def login(username, password):
-    if username in data_mahasiswa and password == data_mahasiswa['Nurul', 'Arfa', 'Diva', 'Manda', 'Maulidia', 'Nurdalifa', 'Rafika', 'Rahmawati',
-                                                                  'Riskawati', 'Wahdania']['password']:
+    if username in data_mahasiswa and password == data_mahasiswa[username]['password']:
         print(f"Selamat datang, {username}!")
     else:
-        print("Data yang dimasukkan tidak ada.")
+        print("Data yang dimasukkan salah atau tidak ada.")
 
 # Input dari pengguna
 input_username = input("Masukkan username: ")
